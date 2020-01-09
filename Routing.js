@@ -14,6 +14,7 @@ import reducers from './src/reducer/reducer';
 
 //screens
 import Home from './src/screen/home'
+import Detail from './src/screen/detail'
 
 let store = compose(
    applyMiddleware(ReduxThunk),
@@ -28,6 +29,7 @@ export default class Routing extends Component {
                <Router>
                   <Scene key="root">
                      <Scene key="home" component={Home} hideNavBar initial/>
+                     <Scene key="detail" component={Detail} hideNavBar />
                   </Scene>
                </Router>
             </PersistGate>

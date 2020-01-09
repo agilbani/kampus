@@ -21,9 +21,9 @@ const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="light-content" backgroundColor='red' />
-      {/* <SafeAreaView> */}
+      <SafeAreaView style={{ flex: 1, backgroundColor: '#fb8c00' }}>
         <Router />
-      {/* </SafeAreaView> */}
+      </SafeAreaView>
     </>
   );
 };
